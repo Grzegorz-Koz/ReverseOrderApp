@@ -4,8 +4,8 @@ namespace ReverseOrderApp
 {
         internal class HelperLibrary
         {            
-            public string GetCharacter(string stringToReverse, int characterIndex)
-            {                                
+            public string GetCharacter(int characterIndex)
+        {                                
                 Console.WriteLine($"Character {characterIndex}: ");
                 string enteredValue = Console.ReadLine();
                 while (enteredValue.Length != 1)
@@ -13,9 +13,8 @@ namespace ReverseOrderApp
                     Console.WriteLine("You entered more than 1 character. Try again:");
                     enteredValue = Console.ReadLine();
                 }
-                stringToReverse = stringToReverse + enteredValue;
-                return stringToReverse;
-            }
+                return enteredValue;
+        }
 
             public int NumberOfCharacters()
             {

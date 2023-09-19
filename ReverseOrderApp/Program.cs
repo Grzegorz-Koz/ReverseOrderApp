@@ -20,7 +20,7 @@
             string stringToReverse = string.Empty;
             for (int i = 1; i <= numberOfCharacters; i++)
             {
-                stringToReverse = hlp.GetCharacter(stringToReverse, i);
+                stringToReverse += hlp.GetCharacter(i);
             }
             Console.WriteLine("\r");
             Console.WriteLine($"Your text: {stringToReverse}");
